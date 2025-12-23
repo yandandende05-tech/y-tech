@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YTech | Your Data, Our Priority</title>
+    <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <style>
+        .hero-gradient {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .logo-container {
+            transition: all 0.3s ease;
+        }
+        .logo-container:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body class="font-sans antialiased text-gray-800">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <div class="flex-shrink-0 flex items-center logo-container">
+                    <img class="h-10 w-auto" src="images/logo.jpg" alt="DesignTech Logo">
+                    <span class="ml-3 text-xl font-bold text-Orange-600">YTech</span>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="index.html" class="text-indigo-600 px-3 py-2 rounded-md text-sm font-medium">Home</a>
+                        <a href="services.html" class="text-gray-600 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium">Services</a>
+                        <a href="portfolio.html" class="text-gray-600 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium">Portfolio</a>
+                        <a href="about.html" class="text-gray-600 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium">About</a>
+                        <a href="contact.html" class="text-gray-600 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium">Contact</a>
+                    </div>
+                </div>
+                <div class="md:hidden">
+                    <button class="text-gray-500 hover:text-indigo-600 focus:outline-none">
+                        <i data-feather="menu"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">Our Services</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">We offer comprehensive design solutions tailored to your business needs.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white rounded-xl shadow-md overflow-hidden service-card transition duration-300" data-aos="zoom-in">
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-indigo-100 p-3 rounded-full">
+                                <i data-feather="image" class="text-indigo-600"></i>
+                            </div>
+                            <h3 class="ml-4 text-xl font-semibold">Poster Design</h3>
+                        </div>
+                        <p class="text-gray-600">Eye-catching posters for events, promotions, and marketing campaigns that grab attention.</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl shadow-md overflow-hidden service-card transition duration-300" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-indigo-100 p-3 rounded-full">
+                                <i data-feather="credit-card" class="text-indigo-600"></i>
+                            </div>
+                            <h3 class="ml-4 text-xl font-semibold">Business Cards Design</h3>
+                        </div>
+                        <p class="text-gray-600">Professional business card designs that make lasting first impressions and enhance networking.</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl shadow-md overflow-hidden service-card transition duration-300" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-indigo-100 p-3 rounded-full">
+                                <i data-feather="globe" class="text-indigo-600"></i>
+                            </div>
+                            <h3 class="ml-4 text-xl font-semibold">Website Design</h3>
+                        </div>
+                        <p class="text-gray-600">Responsive, modern websites that showcase your brand and drive customer engagement.</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl shadow-md overflow-hidden service-card transition duration-300" data-aos="zoom-in">
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-indigo-100 p-3 rounded-full">
+                                <i data-feather="file-text" class="text-indigo-600"></i>
+                            </div>
+                            <h3 class="ml-4 text-xl font-semibold">CV/Resume Design</h3>
+                        </div>
+                        <p class="text-gray-600">Professionally designed resumes that highlight your skills and stand out to employers.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="md:flex md:justify-between">
+                <div class="mb-8 md:mb-0">
+                    <div class="flex items-center logo-container">
+                        <img class="h-8 w-auto" src="images/logo.jpg" alt="DesignTech Logo">
+                        <span class="ml-3 text-xl font-bold text-white">YTech</span>
+                    </div>
+                    <p class="mt-4 text-gray-400 max-w-xs">Your data, our priority.</p>
+                </div>
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-8">
+                    <div>
+                        <h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase mb-4">Services</h3>
+                        <ul class="space-y-2">
+                            <li><a href="#" class="text-gray-300 hover:text-white">Poster Design</a></li>
+                            <li><a href="#" class="text-gray-300 hover:text-white">Business Cards</a></li>
+                            <li><a href="#" class="text-gray-300 hover:text-white">Website Design</a></li>
+                            <li><a href="#" class="text-gray-300 hover:text-white">CV/Resume Design</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase mb-4">Company</h3>
+                        <ul class="space-y-2">
+                            <li><a href="about.html" class="text-gray-300 hover:text-white">About</a></li>
+                            <li><a href="portfolio.html" class="text-gray-300 hover:text-white">Portfolio</a></li>
+                        </ul>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="mt-12 border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 text-sm">© 2026 YTech Solutions. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>AOS.init();</script>
+    <script>feather.replace();</script>
+    <script>
+document.addEventListener("DOMContentLoaded", () => {
+  // ======== MOBILE MENU TOGGLE =========
+  const menuBtn = document.querySelector('nav button');
+  const navLinks = document.querySelector('nav .md\\:block');
+  if (menuBtn && navLinks) {
+    menuBtn.addEventListener('click', () => {
+      navLinks.classList.toggle('hidden');
+    });
+  }
+
+  // ======== SMOOTH SCROLL FOR ANCHOR LINKS =========
+  document.querySelectorAll('a[href^="#"]').forEach(link => {
+    link.addEventListener('click', function (e) {
+      const targetId = this.getAttribute('href');
+      if (targetId.length > 1) {       // skip empty #
+        e.preventDefault();
+        const targetEl = document.querySelector(targetId);
+        if (targetEl) {
+          targetEl.scrollIntoView({ behavior: 'smooth' });
+        }
+      }
+    });
+  });
+
+  // ======== CONTACT FORM ALERT =========
+  const contactForm = document.querySelector('#contact form');
+  if (contactForm) {
+    contactForm.addEventListener('submit', e => {
+      e.preventDefault(); // prevent actual submission for demo
+      alert('Thank you for contacting YTech! We will reply shortly.');
+      contactForm.reset();
+    });
+  }
+
+  // ======== NAVBAR SHADOW ON SCROLL =========
+  const nav = document.querySelector('nav');
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 50) {
+      nav.classList.add('shadow-xl');
+    } else {
+      nav.classList.remove('shadow-xl');
+    }
+  });
+});
+</script>
+
+</body>
+</html>
